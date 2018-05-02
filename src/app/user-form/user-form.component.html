@@ -1,0 +1,15 @@
+<div class="form">
+  <span>
+    <label>Login</label>
+    <input name="login" [(ngModel)]="user.username" (keyup.enter)="onClicked()">
+  </span>
+  <span>
+    <label>Name</label>
+    <input name="name" [(ngModel)]="user.name" (keyup.enter)="onClicked()">
+  </span>
+  <span>
+    <label>Email</label>
+    <input name="email" [(ngModel)]="user.email" (keyup.enter)="onClicked()">
+  </span>
+  <button (click)="onClicked()" class="submit-button"><i class="fa fa-check"></i></button>
+</div>

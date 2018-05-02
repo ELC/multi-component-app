@@ -1,0 +1,19 @@
+<table *ngIf="userList.length !== 0" class="user-list">
+  <tr>
+    <th>Username</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let user of userList" [class.password-set]="user.password"[class.password-not-set]="!user.password" >
+    <td (click)="editUser(user)">{{user.username}}</td>
+    <td (click)="editUser(user)">{{user.name}}</td>
+    <td (click)="editUser(user)">{{user.email}}</td>
+    <td>
+      <button class="delete-button" (click)="delete(user)"><i class="fa fa-times"></i></button>
+      <button *ngIf="userList.length !== 0" (click)="setPassword(user)" class="password-button">
+        <i class="fa fa-key"></i>
+      </button>
+    </td>
+  </tr>
+</table>

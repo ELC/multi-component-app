@@ -1,0 +1,10 @@
+.form{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.submit-button{
+    background-color: white;
+    border: 0px;
+    font-size: 14pt;
+}

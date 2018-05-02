@@ -1,0 +1,32 @@
+.user-list{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button{
+    background-color:rgba(0,0,0,0);
+    border: 0px;
+    font-size: 14pt;
+}
+
+.delete-button{
+    color: red;
+}
+
+.password-button{
+    color: yellow;
+}
+
+.password-set{
+    background-color: greenyellow;
+}
+
+.password-not-set{
+    background-color: tomato;
+}
